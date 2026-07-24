@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/foto/logo.png" />
+    <title>Album Kenangan X RPL </title>
+    <script>
+      // Dijalankan paling awal, sebelum apa pun lain dimuat, supaya browser tidak sempat
+      // me-restore posisi scroll dari kunjungan sebelumnya atau melompat ke #hash lama.
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual'
+      }
+      if (window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search)
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=VT323&family=Press+Start+2P&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

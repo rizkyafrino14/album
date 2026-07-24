@@ -1,0 +1,77 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        cream: '#F2E8CF',
+        offwhite: '#FBF7EE',
+        mustard: '#E3B23C',
+        mustarkdark: '#B8871F',
+        ink: '#211F1B',
+        inkline: '#3A362E',
+        paper: '#EFE3C0',
+        neonteal: '#2DD4BF',
+        neonviolet: '#A78BFA',
+        neonemerald: '#34D399',
+        neonrose: '#FB7185',
+        crt: '#0D1210',
+      },
+      fontFamily: {
+        display: ['"VT323"', 'monospace'],
+        pixel: ['"Press Start 2P"', 'monospace'],
+        body: ['"Inter"', 'sans-serif'],
+        mono: ['"Space Mono"', 'monospace'],
+        signature: ['"Caveat"', 'cursive'],
+      },
+      boxShadow: {
+        win95: '4px 4px 0 0 #211F1B',
+        win95sm: '2px 2px 0 0 #211F1B',
+        neonteal: '0 0 12px rgba(45,212,191,0.65)',
+        neonviolet: '0 0 12px rgba(167,139,250,0.65)',
+      },
+      keyframes: {
+        blink: { '0%,49%': { opacity: 1 }, '50%,100%': { opacity: 0 } },
+        scanline: { '0%': { transform: 'translateY(-100%)' }, '100%': { transform: 'translateY(100%)' } },
+        spinTape: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+        floatSlow: { '0%,100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-6px)' } },
+        slideDown: { '0%': { transform: 'translateY(-100%)', opacity: 0 }, '100%': { transform: 'translateY(0)', opacity: 1 } },
+        cardEnter: { '0%': { transform: 'translateY(16px)', opacity: 0 }, '100%': { transform: 'translateY(0)', opacity: 1 } },
+        pulseDown: {
+          '0%': { top: '0%', opacity: '0' },
+          '8%': { opacity: '1' },
+          '92%': { opacity: '1' },
+          '100%': { top: '100%', opacity: '0' },
+        },
+        sparkle: {
+          '0%': { transform: 'scale(0) translateY(0)', opacity: '1' },
+          '100%': { transform: 'scale(1.4) translateY(-18px)', opacity: '0' },
+        },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '20%': { transform: 'translateX(-6px)' },
+          '40%': { transform: 'translateX(6px)' },
+          '60%': { transform: 'translateX(-4px)' },
+          '80%': { transform: 'translateX(4px)' },
+        },
+        eqBar: {
+          '0%, 100%': { transform: 'scaleY(0.3)' },
+          '50%': { transform: 'scaleY(1)' },
+        },
+      },
+      animation: {
+        blink: 'blink 1s step-end infinite',
+        scanline: 'scanline 6s linear infinite',
+        spinTape: 'spinTape 2.5s linear infinite',
+        floatSlow: 'floatSlow 3.5s ease-in-out infinite',
+        slideDown: 'slideDown 0.6s ease-out',
+        cardEnter: 'cardEnter 0.6s ease-out backwards',
+        pulseDown: 'pulseDown 5s linear infinite',
+        sparkle: 'sparkle 0.8s ease-out forwards',
+        shake: 'shake 0.4s ease-in-out',
+        eqBar: 'eqBar 0.9s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+}
