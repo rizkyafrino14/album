@@ -258,7 +258,7 @@ export const students = [
     id: 'std-19',
     nis: 'P.25069',
     name: 'Kholiz Erlina',
-    nickname: 'Kholiz',
+    nickname: 'Erlina',
     birthDate: '-',
     quote: 'Beberapa hal harus berakhir agar hal yang lebih baik bisa dimulai.',
     instagram: '-',
