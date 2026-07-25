@@ -568,7 +568,7 @@ export const timelineMoments = [
     description:
       '',
     photo: '/foto/memory/kbr.jpeg',
-    driveLink: 'https://drive.google.com/drive/folders/GANTI_DENGAN_ID_FOLDER_STUDI_LAPANGAN',
+    driveLink: 'https://drive.google.com/drive/folders/1LlR3LplUZb4n6wbCG7ph6CN1yoxdv226?usp=drive_link',
   },
 ]
 
